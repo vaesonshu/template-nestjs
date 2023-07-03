@@ -1,0 +1,11 @@
+@use './variables.scss' as *;
+
+// 全局样式
+$fsColor: green;
+
+.base-style {
+  color: $fsColor;
+  font-size: $fs30;
+  margin: 5px;
+  @include border();
+}

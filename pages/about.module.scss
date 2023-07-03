@@ -1,0 +1,15 @@
+@use '@/styles/variables.scss' as *;
+
+.aboutStyle {
+  font-size: 30px;
+  color: blue;
+  margin: 5px;
+  @include border();
+}
+
+// 导出了一个 scss 变量, 是专门给js代码使用 ( 必须要放在css module的文件中 )
+:export {
+  primaryColor: pink;
+  // primaryColor: $fsColor;
+  // primaryColor: $primaryColor;
+}
